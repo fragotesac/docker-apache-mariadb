@@ -1,8 +1,9 @@
-FROM php:7.2-apache
+FROM php:7.3-apache
 
 RUN apt-get update \
  && apt-get install -y vim \
  && apt-get install -y git zlib1g-dev \
+ && apt-get install -y libzip-dev \
  && apt-get install -y libxml2-dev \
  && apt-get install -y libpng-dev \
  && docker-php-ext-install soap pdo pdo_mysql mysqli zip intl gd mbstring dom fileinfo\
