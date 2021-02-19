@@ -13,10 +13,3 @@ RUN apt-get update \
   | php -- --install-dir=/usr/local/bin --filename=composer
 
 WORKDIR /var/www/
-
-# Get Chash
-#RUN git clone https://github.com/chamilo/chash.git chash
-#WORKDIR chash
-#RUN composer update --no-dev
-#RUN php -d phar.readonly=0 createPhar.php
-#RUN chmod +x chash.phar && mv chash.phar /usr/local/bin/chash

@@ -12,6 +12,10 @@ It will start building 3 containers:
 2. MariaDB
 3. Adminer
 
+Just run:
+
+`sh start.sh`
+
 Once the build finished you'll see apache loading in: 
 
 ```http://localhost:8030/```
