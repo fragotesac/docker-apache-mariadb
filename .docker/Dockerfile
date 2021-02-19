@@ -6,7 +6,7 @@ RUN apt-get update \
  && apt-get install -y libzip-dev \
  && apt-get install -y libxml2-dev \
  && apt-get install -y libpng-dev \
- && docker-php-ext-install soap pdo pdo_mysql mysqli zip intl gd mbstring dom fileinfo\
+ && docker-php-ext-install soap pdo pdo_mysql mysqli zip intl gd mbstring dom fileinfo xml xmlrpc xmlwriter\
  && a2enmod rewrite \
  && echo "IncludeOptional v-host/*.conf" >> /etc/apache2/apache2.conf \
  && curl -sS https://getcomposer.org/installer \

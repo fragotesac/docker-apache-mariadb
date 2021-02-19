@@ -17,7 +17,7 @@ services:
       ports:
         - 3307:3306
 
-    php72_apache:
+    php73_apache:
       build:
         context: ./.docker
       volumes:
