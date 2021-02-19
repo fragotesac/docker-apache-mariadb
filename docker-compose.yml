@@ -23,5 +23,6 @@ services:
       volumes:
         - .apache/:/etc/apache2/v-host/
         - ./www:/var/www
+        - .php/debug-lms.ini:/usr/local/etc/php/conf.d/debug-lms.ini
       ports:
         - 8030:80
