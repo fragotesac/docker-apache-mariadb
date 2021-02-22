@@ -1,2 +1,4 @@
 www/*
 !www/index.php
+.idea/.DS_Store
+.idea
