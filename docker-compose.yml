@@ -25,4 +25,4 @@ services:
         - ./www:/var/www
         - .php/debug-lms.ini:/usr/local/etc/php/conf.d/debug-lms.ini
       ports:
-        - 8030:80
+        - 80:80
